@@ -44,12 +44,12 @@ const Reservation = () => {
     <section className="reservation" id="reservation">
       <div className="container">
         <div className="banner">
-          <img src="/reservation.png" alt="res" />
+          <img src="/dukan5.jpg" alt="res" />
         </div>
         <div className="banner">
           <div className="reservation_form_box">
-            <h1>MAKE A RESERVATION</h1>
-            <p>For Further Questions, Please Call</p>
+            <h1>MAKE A ORDER</h1>
+            <p>For Further Questions, Please Call : 9782997219</p>
             <form>
               <div>
                 <input
@@ -57,12 +57,14 @@ const Reservation = () => {
                   placeholder="First Name"
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
+
                 />
                 <input
                   type="text"
                   placeholder="Last Name"
                   value={lastName}
                   onChange={(e) => setLastName(e.target.value)}
+                  
                 />
               </div>
               <div>
