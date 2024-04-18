@@ -24,123 +24,78 @@
                 "id": 1,
                 "image": "./sweet7.jpeg",
                 "title": "JALEBI",
-                "category": "120"
+                "category": "₹120/kg"
             },
             {
                 "id": 2,
                 "image": "./sweet5.jpg",
                 "title": "RED VALVET CAKE",
-                "category": "Dinner"
+                "category": "₹450/kg"
             },
             {
                 "id": 3,
                 "image": "./sweet1.jpg",
                 "title": "PAN BARFI",
-                "category": "Breakfast"
+                "category": "₹750/kg"
             },
             {
                 "id": 4,
                 "image": "./sweet3.jpg",
-                "title": "PIZZA",
-                "category": "Dinner"
+                "title": " TOMATO CAPISICUM PIZZA",
+                "category": "₹250"
             },
             {
                 "id": 5,
                 "image": "./sweet2.jpg",
                 "title": "MOTI CHUR LADDU",
-                "category": "Lunch"
+                "category": "₹160/kg"
             },
             {
                 "id": 6,
                 "image": "./sweet8.jpg",
                 "title": "KAJU KATLI",
-                "category": "Dinner"
+                "category": "₹500/kg"
             },
             {
                 "id": 7,
                 "image": "./sweet6.jpg",
                 "title": "CHANDRAKALA GUNJA",
-                "category": "Dinner"
+                "category": "₹350"
             },
             {
                 "id": 8,
                 "image": "./sweet9.jpg",
                 "title": "BASAN LADDU",
-                "category": "Dinner"
+                "category": "₹400/kg"
             },
             {
                 "id": 9,
-                "image": "./dinner6.png",
-                "title": "GRILLED FISH",
-                "category": "Dinner"
+                "image": "./cake.jpg",
+                "title": "CAKE",
+                "category": "₹250-1000"
             },
             {
                 "id": 10,
-                "image": "./dinner6.png",
-                "title": "GRILLED FISH",
-                "category": "Dinner"
+                "image": "./gevar.jpg",
+                "title": "GEVAR",
+                "category": "₹600/kg"
             },
             {
                 "id": 11,
-                "image": "./dinner6.png",
-                "title": "GRILLED FISH",
-                "category": "Dinner"
+                "image": "./kalakand.jpg",
+                "title": "KALAKAND",
+                "category": "₹350/kg"
             },
             {
                 "id": 12,
-                "image": "./dinner6.png",
-                "title": "GRILLED FISH",
-                "category": "Dinner"
+                "image": "./raj.jpg",
+                "title": "RAJ BHOG",
+                "category": "₹225/kg"
             }
 
         ],
-        "team": [{
-                "id": 1,
-                "image": "./team_member_1.png",
-                "name": "Ram Laal",
-                "designation": "Founder & Head Chef"
-            },
-            {
-                "id": 2,
-                "image": "./team_member_2.png",
-                "name": "Mahajan Das",
-                "designation": "Sous Chef"
-            },
-            {
-                "id": 3,
-                "image": "./team_member_3.png",
-                "name": "Ritik kumar",
-                "designation": "Fast Food Chef"
-            },
-            {
-                "id": 4,
-                "image": "./team_member_4.png",
-                "name": "Gungun",
-                "designation": "Senior Chef"
-            }
-        ],
-        "testimonials": [{
-                "id": 1,
-                "image": "./review1.png",
-                "description": "Morbi nulla nec dui lacus, in. Libero in pretium metus massa. Sodales dignissim vitae mauris varius faucibus. Eleifend dui, non laoreet ac luctus facilisis diam. Enim scelerisque vel at id viverra tellus.",
-                "rating": 4,
-                "userName": "Jane Cooper"
-            },
-            {
-                "id": 2,
-                "image": "./review2.png",
-                "description": "Tortor vel nunc netus pharetra enim, enim dolor mauris in. Sit nam fringilla in egestas. Libero condimentum quis in vulputate adipiscing venenatis augue. Venenatis faucibus.",
-                "rating": 4.5,
-                "userName": "Esther Howard"
-            },
-            {
-                "id": 3,
-                "image": "./review3.png",
-                "description": "Tortor vel nunc netus pharetra enim, enim dolor mauris in. Sit nam fringilla in egestas. Libero condimentum quis in vulputate adipiscing venenatis augue. Venenatis faucibus.",
-                "rating": 5,
-                "userName": "Guy Hawkins"
-            }
-        ],
+
+
         "who_we_are": [{
                 "id": 1,
                 "number": "14",
@@ -177,14 +132,10 @@
                 "title": "SERVICES",
                 "link": "qualities"
             },
-            {
-                "id": 4,
-                "title": "TEAM",
-                "link": "team"
-            },
+
             {
                 "id": 5,
-                "title": "RESERVATION",
+                "title": "ORDERS",
                 "link": "reservation"
             }
         ]

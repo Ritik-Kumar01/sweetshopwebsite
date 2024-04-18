@@ -17,7 +17,7 @@ const HeroSection = () => {
             <div className="textAndLogo">
               <div className="textWithSvg">
                 <h1 className="title">Sweet</h1>
-                <h1 className="title dishes_title">Dishes</h1>
+                {/* <h1 className="title dishes_title">Dishes</h1> */}
                 <img src="./threelines.svg" alt="threelines" />
               </div>
               <img className="logo" src="logo5.jpg" alt="logo" />

@@ -11,6 +11,10 @@ body {
     background-color: rgb(253, 233, 9);
 }
 
+footer {
+    background-color: rgb(25, 178, 38);
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
