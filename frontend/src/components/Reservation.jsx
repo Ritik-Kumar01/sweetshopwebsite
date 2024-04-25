@@ -12,6 +12,10 @@ const Reservation = () => {
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
   const [phone, setPhone] = useState(0);
+  const [sweetname, setSweetname] =useState("");
+  const [quantity,setQuantity]=useState("");
+  const [street,setStreet] = useState("");
+  const [city,setCity] = useState("");
   const navigate = useNavigate();
 
   const handleReservation = async (e) => {
@@ -19,7 +23,7 @@ const Reservation = () => {
     try {
       const { data } = await axios.post(
         "https://sweetshopwebsite.onrender.com/reservation/send",
-        { firstName, lastName, email, phone, date, time },
+        { firstName, lastName, email, phone, date, time ,sweetname,quantity,street,city},
         {
           headers: {
             "Content-Type": "application/json",
@@ -34,6 +38,11 @@ const Reservation = () => {
       setEmail("");
       setTime("");
       setDate("");
+      setSweetname("");
+      setQuantity("");
+      setStreet("");
+      setCity("");
+
       navigate("/success");
     } catch (error) {
       toast.error(error.response.data.message);
@@ -69,8 +78,8 @@ const Reservation = () => {
               </div>
               <div>
                 <input
-                  type="date"
-                  placeholder="Date"
+                  type=" date"
+                  placeholder=" Delivery Date"
                   value={date}
                   onChange={(e) => setDate(e.target.value)}
                 />
@@ -96,6 +105,42 @@ const Reservation = () => {
                   onChange={(e) => setPhone(e.target.value)}
                 />
               </div>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Sweet Name"
+                  value={sweetname}
+                  onChange={(e) => setSweetname(e.target.value)}
+
+                />
+              </div>
+                 <div>
+              <input
+                  type="number"
+                  placeholder="Quantity in Kgs"
+                  value={quantity}
+                  onChange={(e) => setQuantity(e.target.value)}
+                  
+                />
+                </div>
+                <div>
+                <input
+                  type="text"
+                  placeholder="Street Address"
+                  value={street}
+                  onChange={(e) => setStreet(e.target.value)}
+
+                />
+                <input
+                  type="text"
+                  placeholder="City"
+                  value={city}
+                  onChange={(e) => setCity(e.target.value)}
+                  
+                />
+              </div>
+              
+              
               <button type="submit" id="button" onClick={handleReservation}>
                 ORDER NOW{" "}
                 <span>
