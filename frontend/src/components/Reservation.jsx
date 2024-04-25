@@ -18,7 +18,7 @@ const Reservation = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:4000/reservation/send",
+        "https://sweetshopwebsite.onrender.com/reservation/send",
         { firstName, lastName, email, phone, date, time },
         {
           headers: {
@@ -97,7 +97,7 @@ const Reservation = () => {
                 />
               </div>
               <button type="submit" id="button" onClick={handleReservation}>
-                RESERVE NOW{" "}
+                ORDER NOW{" "}
                 <span>
                   <HiOutlineArrowNarrowRight />
                 </span>
