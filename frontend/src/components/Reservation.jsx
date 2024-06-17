@@ -12,7 +12,7 @@ const Reservation = () => {
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
   const [phone, setPhone] = useState(0);
-  const [sweetname, setSweetname] =useState("");
+  const [sweetName, setSweetName] =useState("");
   const [quantity,setQuantity]=useState("");
   const [street,setStreet] = useState("");
   const [city,setCity] = useState("");
@@ -22,8 +22,8 @@ const Reservation = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "https://sweetshopwebsite.onrender.com/reservation/send",
-        { firstName, lastName, email, phone, date, time ,sweetname,quantity,street,city},
+        "http://localhost:4000/reservation/send",
+        { firstName, lastName, email, phone, date, time ,sweetName,quantity,street,city},
         {
           headers: {
             "Content-Type": "application/json",
@@ -38,7 +38,7 @@ const Reservation = () => {
       setEmail("");
       setTime("");
       setDate("");
-      setSweetname("");
+      setSweetName("");
       setQuantity("");
       setStreet("");
       setCity("");
@@ -109,8 +109,8 @@ const Reservation = () => {
                 <input
                   type="text"
                   placeholder="Sweet Name"
-                  value={sweetname}
-                  onChange={(e) => setSweetname(e.target.value)}
+                  value={sweetName}
+                  onChange={(e) => setSweetName(e.target.value)}
 
                 />
               </div>

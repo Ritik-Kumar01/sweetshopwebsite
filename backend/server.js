@@ -9,7 +9,7 @@ const PORT = 4000;
 
 app.use(
     cors({
-        origin: "https://moonlit-kitsune-e9dd43.netlify.app",
+        origin: "http://localhost:5173",
         methods: ["GET", "POST"],
         allowedHeaders: ["Content-Type"],
         credentials: true,

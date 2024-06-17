@@ -3,13 +3,13 @@ import { Reservation } from "../models/reservation.js";
 
 
 const send_reservation = async(req, res, next) => {
-    const { firstName, lastName, email, date, time, phone, sweetname, quantity, street, city } = req.body;
-    if (!firstName || !lastName || !email || !date || !time || !phone || !sweetname || !quantity || !street || !city) {
+    const { firstName, lastName, email, date, time, phone, sweetName, quantity, street, city } = req.body;
+    if (!firstName || !lastName || !email || !date || !time || !phone || !sweetName || !quantity || !street || !city) {
         return next(new ErrorHandler("Please Fill Full Reservation Form!", 400));
     }
 
     try {
-        await Reservation.create({ firstName, lastName, email, date, time, phone, sweetname, quantity, street, city });
+        await Reservation.create({ firstName, lastName, email, date, time, phone, sweetName, quantity, street, city });
         res.status(201).json({
             success: true,
             message: "Reservation Sent Successfully!",
